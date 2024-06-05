@@ -21,7 +21,7 @@ public class StudentController {
 
     @GetMapping("/")
     public String giveResponse() {
-        return "Hello Worl";
+        return "Hello World";
     }
 
     @PostMapping("/upload")
@@ -30,7 +30,7 @@ public class StudentController {
             List<Student> students = CsvUtils.read(Student.class, file.getInputStream());
             System.out.println(students);
             studentService.processCsvAsync(students);
-            return ResponseEntity.ok("File processing started");
+            return ResponseEntity.ok("File uploaded successfully");
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body("Error processing file: " + e.getMessage());
@@ -53,7 +53,7 @@ public class StudentController {
             }
 
             studentService.processCsvAsync(students);
-            return ResponseEntity.ok("File processing started");
+            return ResponseEntity.ok("File uploaded successfully");
 
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
