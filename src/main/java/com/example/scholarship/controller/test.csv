@@ -1,0 +1,10 @@
+rollNumber,studentName,science,maths,english,computer,eligible
+1,John Doe,85,90,88,92,true
+2,Jane Smith,78,85,84,89,false
+100101,Vivek Sharma,86,89,78,92,ToBeChecked
+100102,Ananya Gupta,90,92,80,88,ToBeChecked
+100103,Rahul Singh,75,85,70,95,ToBeChecked
+100104,Meera Patel,88,92,78,90,ToBeChecked
+100105,Aman Verma,85,90,80,85,ToBeChecked
+100106,Deepika Singh,92,95,85,98,ToBeChecked
+100107,Krishna Kumar,80,82,75,85,ToBeChecked
